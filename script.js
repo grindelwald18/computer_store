@@ -8,6 +8,13 @@
 //     duration: 800,
 //     anchorPlacement: "center-bottom",
 // });
+
+const items_ssd= [
+    {id:67, price: 120},
+    {id:2, price: 121},
+    {id:3, price: 122},
+    {id:4, price: 124},
+]
 function funk(my_arr,name){
     let form = document.createElement("form")
     for(k of my_arr){
@@ -328,6 +335,8 @@ document.getElementById("answer_SSD1").innerHTML=""
     switch(select_SSD1.value)
     {    
         case "120GB":
+                // this.item.id[1]
+                console.log(items_ssd[0].id)
                 let gb120=["120 Гб Kingston","120 Гб Kingston M.2"]
                 let container_gb120 = document.getElementById("answer_SSD1");
                 let form_gb120 = container_gb120.getElementsByTagName("form")[0];
