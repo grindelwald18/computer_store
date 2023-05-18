@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="singIn.css" />
+
+    <title>Authorization</title>
+</head>
+
+<section class="container">
+    <article class="half">
+        <h1>Authorization</h1>
+        <div class="tabs">
+            <span class="tab signin active"><a href="#signin">Вход</a></span>
+            <span class="tab signup"><a href="#signup">Регистрация</a></span>
+        </div>
+        <div class="content">
+            <div class="signin-cont cont">
+                <!-- <form action="#" method="post" enctype="multipart/form-data"> -->
+                    <input type="email" name="email" id="login" class="inpt" required="required"
+                        placeholder="Логин">
+                    <label for="email">Логин</label>
+                    <input type="password" name="password" id="pwd" class="inpt" required="required"
+                        placeholder="Пароль">
+                    <label for="password">Пароль</label>
+                    <input type="checkbox" id="remember" class="checkbox" checked>
+                    <label for="remember">Запомнить меня</label>
+                    <!-- <div class="submit-wrap">
+                                            <input type="submit" id="loginb" value="Войти" class="submit">
+                                    </div> -->
+                    <button id="loginb">Войти</button>
+                <!-- </form> -->
+            </div>
+            <div class="signup-cont cont">
+                <!-- <form action="#" method="post" enctype="multipart/form-data"> -->
+                    <input type="name" name="name" id="reg-name" class="inpt" required="required" placeholder="Имя">
+                    <label for="name">Имя</label>
+                    <input name="email" id="reg-log" class="inpt" required="required" placeholder="Логин">
+                    <label for="email">Логин</label>
+                    <input type="password" name="password" id="reg-password" class="inpt" required="required"
+                        placeholder="Пароль">
+                    <label for="password">Пароль</label>
+                    <!-- <div class="submit-wrap">
+                                            <input type="submit" value="Зарегистрироваться" class="submit" id="registbnt">
+                                    </div>  -->
+                    <button id="registbnt">Зарегистрироваться</button>
+                <!-- </form> -->
+            </div>
+
+    </article>
+    <div class="half bg"></div>
+</section>
+
+
+<script src="scriptautoriz.js"></script>
+
+</body>
