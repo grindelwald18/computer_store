@@ -128,7 +128,7 @@ input:focus + label {
     overflow: hidden;
 }
 .dg-mytable{
-    background-image: url(bg.png);
+    background-image: url(img/bg.png);
     width: 100%;
     height: 85vh;
     display: flex;
@@ -144,7 +144,7 @@ input:focus + label {
     height: 100vh;
     opacity: 1;
     z-index: -1;
-    background-image: url(bfc073b789ca7a1468b32add7c7dfa34.png);
+    background-image: url(img/bg-header.png);
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
@@ -154,7 +154,7 @@ input:focus + label {
     display: flex;
     width: 100%;
     height: 100vh;
-    background-image: url(photo_2023-05-14_22-44-55.jpg);
+    background-image: url(img/aboutUs/photo_2023-05-14_22-44-55.jpg);
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
@@ -242,18 +242,6 @@ strong{
     padding: 50px;
 }
 
-.body1{
-    /* display: flex; */
-}
-
-.body2{
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    padding-right: 50px;
-    padding-bottom: 2px;
-    color: #ffffff;
-}
 label{
     width: 200px;
     padding: 2px;
@@ -284,10 +272,7 @@ label{
 }
 
 .field{
-    padding-top: 2px;
-    /* size: 350px; */
-    /* width: 9em; */
-    
+    padding-top: 2px;    
 }
 #processor>form{
     display: flex;
@@ -298,72 +283,19 @@ option{
 }
 .apple{
     border-radius: 2px solid black;
-
 }
 .apples:hover{
     background-color: #ffffffe9;
 }
-
-.play-store{
-    background-color: #0000007e;
-}
-.play-store:hover{
-    background-color: rgba(124,11,54,0.767);
-}
-
-.mytable{
-    /* background-image: ; */
-    max-width: 90%;
-    background-color: #1c232e;
-    color: #8490a4;
-}
-.mytable td{
-    border: 2px solid #8490a4;
-    /* max-width: 30%; */
-    height: 200px;
-}
-
-
-.mytable h3{
-    color: #fff;
-    border-bottom: 1px solid #8490a4;
-}
-.mytable h2{
-    color: #fff;
-    background-image: url(bg.png);
-}
-
 .section1{
-    background-image: url(bg.png);
+    background-image: url(img/bg.png);
     color: #8490a4;
-}
-.section1 h2{
-    color: #fff;
 }
 
 
 /* ********section 2********* */
 .section2{
-    background-image: url(bg.png);
-}
-.workPC{
-    padding-left: 30px;
-    padding-bottom: 25px;
-    padding-top: 10px;
-    display: flex;
-    color: #fff;
-    font-size: 15px;
-}
-.gamePC{
-    padding-left: 30px;
-    font-size: 15px;
-    /* padding: 5px; */
-    display: flex;
-    color: #fff;
-}
-.img-workPC{
-    margin-left: 15px;
-    width: 50%;
+    background-image: url(img/bg.png);
 }
 .configurator{
     height: 310px;
@@ -386,71 +318,19 @@ option{
     width: auto;
 }
 .price{
-
     border-bottom: 1px solid #8490a4;
-}
-.text-gamePC{
-    margin-left: 30px;
-    width: 50%;
-}
-.gamePC h4{
-    color: #fff;
 }
 .section2 p{
     font-size: 10px;
     color: #8490a4;
 }
-
 .section21{
-    height: 500px;
+    height: 1100px;
     background:#8490a4;
 }
-.text-comp{font-family: 'PF DinDisplay Pro';
-    font-size: .75rem;
-    line-height: 1.33;
-    color: #1c232e;
-    margin-bottom: 1rem;
-}
-.comp{
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-}
-
-.comp1{
-    width: 20%;
-    height: 80%;
-    background:#1c232e;
-}
-.comp2{
-    width: 20%;
-    height: 80%;
-    background:#1c232e;
-}
-.comp3{
-    width: 20%;
-    height: 80%;
-    background:#1c232e;
-}
-.comp4{
-    width: 20%;
-    height: 80%;
-    background:#1c232e;
-}
-
 .section21 h3{
     color: #ffffff;
 }
-.text-workPC{
-    /* font-size: 1; */
-    width: 50%;
-    flex: auto;
-}
-.text-workPC h4{
-    color: #fff;
-}
-
-
 /* ********section 3********* */
 
 .fitco-section{
