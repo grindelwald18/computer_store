@@ -44,87 +44,12 @@ app.get('/computer', (req, res)=>{
     })
 } );
 
-app.get('/motherboard', (req, res)=>{
-    const motherboard = [];
-    db
-    .collection('motherboard')
-    .find()//cursor 
-    .forEach((motherboar) => motherboard.push(motherboar))
-    .then(()=>{
-        res
-        .status(200)
-        .json(motherboard);
-
-    })
-    .catch(()=>{
-        res
-        .status(500)
-        .json({error: "Something goes wrong.."})
-    })
-} );
-
-app.get('/ram', (req, res)=>{
-    const ram = [];
-    db
-    .collection('ram')
-    .find()//cursor 
-    .forEach((ramm) => ram.push(ramm))
-    .then(()=>{
-        res
-        .status(200)
-        .json(ram);
-
-    })
-    .catch(()=>{
-        res
-        .status(500)
-        .json({error: "Something goes wrong.."})
-    })
-});
-
-app.get('/video_card', (req, res)=>{
-    const video_card = [];
-    db
-    .collection('video_card')
-    .find()//cursor 
-    .forEach((video_car) => video_card.push(video_car))
-    .then(()=>{
-        res
-        .status(200)
-        .json(video_card);
-
-    })
-    .catch(()=>{
-        res
-        .status(500)
-        .json({error: "Something goes wrong.."})
-    })
-} );
-
-app.get('/Hard_drive', (req, res)=>{
-    const Hard_drive = [];
-    db
-    .collection('Hard_drive')
-    .find()//cursor 
-    .forEach((Hard_driv) => Hard_drive.push(Hard_driv))
-    .then(()=>{
-        res
-        .status(200)
-        .json(Hard_drive);
-
-    })
-    .catch(()=>{
-        res
-        .status(500)
-        .json({error: "Something goes wrong.."})
-    })
-} );
 
 app.post('/addProduct', (req, res) => { 
     // let collname=String(select_selectType.value)
     // console.log(collname)
     db 
-        .collection(req.body.collection) 
+        .collection('computer') 
         .insertOne(req.body.addItems) 
         .then(() => { 
             res 
@@ -138,63 +63,6 @@ app.post('/addProduct', (req, res) => {
         }) 
  
 });
-
-app.get('/SSD', (req, res)=>{
-    const SSD = [];
-    db
-    .collection('SSD')
-    .find()//cursor 
-    .forEach((SS) => SSD.push(SS))
-    .then(()=>{
-        res
-        .status(200)
-        .json(SSD);
-
-    })
-    .catch(()=>{
-        res
-        .status(500)
-        .json({error: "Something goes wrong.."})
-    })
-} );
-
-app.get('/Power', (req, res)=>{
-    const Power = [];
-    db
-    .collection('Power')
-    .find()//cursor 
-    .forEach((Powe) => Power.push(Powe))
-    .then(()=>{
-        res
-        .status(200)
-        .json(Power);
-
-    })
-    .catch(()=>{
-        res
-        .status(500)
-        .json({error: "Something goes wrong.."})
-    })
-} );
-
-app.get('/Monitor', (req, res)=>{
-    const Monitor = [];
-    db
-    .collection('Monitor')
-    .find()//cursor 
-    .forEach((Monito) => Monitor.push(Monito))
-    .then(()=>{
-        res
-        .status(200)
-        .json(Monitor);
-
-    })
-    .catch(()=>{
-        res
-        .status(500)
-        .json({error: "Something goes wrong.."})
-    })
-} );
 
 app.post('/login', (req, res) => {
     db
